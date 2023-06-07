@@ -8,6 +8,10 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '20'
 
+jar {
+    archiveFileName = "app.jar"
+}
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
