@@ -1,7 +1,7 @@
 FROM openjdk:20-jdk
 
 WORKDIR /home/save
-COPY ./build/libs/app.jar app.jar
+COPY ./build/libs/*.jar app.jar
 
 EXPOSE 8080
 
