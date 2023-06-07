@@ -24,7 +24,7 @@ jobs:
       - name: Add Gradle Wrapper for strating Gradlew
         run: gradle wrapper
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew build -x jar
       - name: set global env
         id: global_env
         run: echo "::set-output name=DOCKERHUB_IMAGE_NAME::docker.pkg.github.com/dschek/${{ steps.pr.outputs.NAME}}/${{ steps.pr.outputs.NAME}}"
