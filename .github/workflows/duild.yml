@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '20'
-          distribution: 'temurin'
+          distribution: 'oracle'
           cache: gradle
       - name: Add Gradle Wrapper for strating Gradlew
         run: gradle wrapper
